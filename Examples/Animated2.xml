@@ -1,0 +1,35 @@
+<Main>
+  <ConfigInstance LocationX="713" LocationY="123">
+    <FunctionInstance Guid="eb95ab2c-9481-4c33-a577-7e8952e11d41" IsSolo="0" IsMute="0" CodeName="ImageOutput" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="236" LocationY="146">
+    <FunctionInstance Guid="8f07ba6c-b75a-4254-bb8b-ae45dc6578fa" IsSolo="0" IsMute="0" CodeName="Sinus">
+      <Parameter Name="Add" Value="2" />
+      <Parameter Name="Intensity" Value="1" />
+      <Output OutputToConnector="Scale X" OutputToItem="80eaa131-80c2-4816-9f19-15a6d3df08df" />
+      <Output OutputToConnector="Scale Y" OutputToItem="80eaa131-80c2-4816-9f19-15a6d3df08df" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="469" LocationY="89">
+    <FunctionInstance Guid="80eaa131-80c2-4816-9f19-15a6d3df08df" IsSolo="0" IsMute="0" CodeName="Voronoi">
+      <Parameter Name="Location X" Value="0" />
+      <Parameter Name="Location Y" Value="0" />
+      <Output OutputToConnector="Red" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Green" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Blue" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="18" LocationY="151">
+    <FunctionInstance Guid="4414bc1f-3f44-4597-935e-439ab0e9ce9f" IsSolo="0" IsMute="0" CodeName="LinearPlayer">
+      <Output OutputToConnector="Location X" OutputToItem="8f07ba6c-b75a-4254-bb8b-ae45dc6578fa" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="19" LocationY="243">
+    <FunctionInstance Guid="8cd9dcbe-e4ee-4d1a-b074-ae9fc80bc040" IsSolo="0" IsMute="0" CodeName="LinearPlayer">
+      <Parameter Name="Start" Value="0.2" />
+      <Parameter Name="End" Value="1.2" />
+      <Parameter Name="Frames" Value="140" />
+      <Output OutputToConnector="Location Y" OutputToItem="8f07ba6c-b75a-4254-bb8b-ae45dc6578fa" />
+    </FunctionInstance>
+  </ConfigInstance>
+</Main>

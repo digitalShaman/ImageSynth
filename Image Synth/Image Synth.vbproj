@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36DACF59-7449-4251-AE93-03E99574C9B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ImageSynthesis.My.MyApplication</StartupObject>
+    <RootNamespace>ImageSynthesis</RootNamespace>
+    <AssemblyName>ImageSynthesis</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ImageSynthesis.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ImageSynthesis.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=2.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigInstance.vb" />
+    <Compile Include="frmEnterValue.Designer.vb">
+      <DependentUpon>frmEnterValue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnterValue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.vb">
+      <DependentUpon>frmHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModuleInfo.Designer.vb">
+      <DependentUpon>frmModuleInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModuleInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChooseFunction.Designer.vb">
+      <DependentUpon>frmChooseFunction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChooseFunction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepeaterValues.Designer.vb">
+      <DependentUpon>frmRepeaterValues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepeaterValues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigManager.vb" />
+    <Compile Include="FunctionModules\Functions\Add.vb" />
+    <Compile Include="FunctionModules\Functions\Clamp.vb" />
+    <Compile Include="FunctionModules\Functions\Compressor.vb" />
+    <Compile Include="FunctionModules\Generators\Concentric.vb" />
+    <Compile Include="FunctionModules\FunctionBase.vb" />
+    <Compile Include="FunctionModules\LinearPlayer.vb" />
+    <Compile Include="FunctionModules\OutputTo.vb" />
+    <Compile Include="FunctionModules\IFunction.vb" />
+    <Compile Include="FunctionModules\ImageOutput.vb" />
+    <Compile Include="FunctionModules\Generators\Julia.vb" />
+    <Compile Include="FunctionModules\Generators\Mandelbrot.vb" />
+    <Compile Include="FunctionModules\Functions\Multiply.vb" />
+    <Compile Include="FunctionModules\Generators\Polygon.vb" />
+    <Compile Include="FunctionModules\Generators\RandomNoise.vb" />
+    <Compile Include="FunctionModules\Functions\Filter.vb" />
+    <Compile Include="FunctionModules\Generators\Scratches.vb" />
+    <Compile Include="FunctionModules\Generators\Voronoi.vb" />
+    <Compile Include="FunctionModules\Functions\Crossfade.vb" />
+    <Compile Include="FunctionModules\Repeater.vb" />
+    <Compile Include="ImageSynth.vb" />
+    <Compile Include="OGLRendering\Model.vb" />
+    <Compile Include="OGLRendering\modShared.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FunctionModules\Generators\SimplexNoise.vb" />
+    <Compile Include="FunctionModules\Generators\Sinus.vb" />
+    <Compile Include="NoScrollPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OGLRendering\Scene.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmChooseFunction.resx">
+      <DependentUpon>frmChooseFunction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnterValue.resx">
+      <DependentUpon>frmEnterValue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModuleInfo.resx">
+      <DependentUpon>frmModuleInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepeaterValues.resx">
+      <DependentUpon>frmRepeaterValues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OGLRendering\FragmentShader.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

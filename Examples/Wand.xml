@@ -1,0 +1,47 @@
+<Main>
+  <ConfigInstance LocationX="873" LocationY="140">
+    <FunctionInstance Guid="493894ff-f78f-4608-ae08-522b2f624d3f" IsSolo="0" IsMute="0" CodeName="ImageSynth.ImageOutput" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="567" LocationY="125">
+    <FunctionInstance Guid="fdbc327a-f782-4781-a8c0-f1c94883adf2" IsSolo="0" IsMute="0" CodeName="ImageSynth.Add">
+      <Parameter Name="Value" Value="0.73" />
+      <Output OutputToConnector="Red" OutputToItem="493894ff-f78f-4608-ae08-522b2f624d3f" />
+      <Output OutputToConnector="Green" OutputToItem="493894ff-f78f-4608-ae08-522b2f624d3f" />
+      <Output OutputToConnector="Blue" OutputToItem="493894ff-f78f-4608-ae08-522b2f624d3f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="254" LocationY="47">
+    <FunctionInstance Guid="8108ff2e-7303-4c88-b120-1d7adde01bdb" IsSolo="0" IsMute="0" CodeName="ImageSynth.SimplexNoise">
+      <Parameter Name="Add" Value="0.121576654590569" />
+      <Parameter Name="Scale X" Value="100" />
+      <Parameter Name="Scale Y" Value="100" />
+      <Output OutputToConnector="Input" OutputToItem="fdbc327a-f782-4781-a8c0-f1c94883adf2" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="273" LocationY="203">
+    <FunctionInstance Guid="9901a004-600e-4cf0-8275-a766d6581adb" IsSolo="0" IsMute="0" CodeName="ImageSynth.SimplexNoise">
+      <Parameter Name="Add" Value="0.121576654590569" />
+      <Parameter Name="Scale X" Value="100" />
+      <Parameter Name="Scale Y" Value="100" />
+      <Parameter Name="Location X" Value="0.175343629239987" />
+      <Output OutputToConnector="Input" OutputToItem="fdbc327a-f782-4781-a8c0-f1c94883adf2" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="12" LocationY="124">
+    <FunctionInstance Guid="273a9604-db24-48de-9433-61532e703fa3" IsSolo="0" IsMute="0" CodeName="ImageSynth.Voronoi">
+      <Parameter Name="Add" Value="0.5" />
+      <Parameter Name="Intensity" Value="0.0617855439989174" />
+      <Parameter Name="Number of Points" Value="20" />
+      <Parameter Name="Location X" Value="0" />
+      <Parameter Name="Location Y" Value="0" />
+      <Output OutputToConnector="Intensity" OutputToItem="8108ff2e-7303-4c88-b120-1d7adde01bdb" />
+      <Output OutputToConnector="Intensity" OutputToItem="9901a004-600e-4cf0-8275-a766d6581adb" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="285" LocationY="357">
+    <FunctionInstance Guid="861b70a3-9471-4c57-8baf-685cfbc85258" IsSolo="0" IsMute="0" CodeName="ImageSynth.RandomNoise">
+      <Parameter Name="Intensity" Value="0.17445817242433" />
+      <Output OutputToConnector="Input" OutputToItem="fdbc327a-f782-4781-a8c0-f1c94883adf2" />
+    </FunctionInstance>
+  </ConfigInstance>
+</Main>

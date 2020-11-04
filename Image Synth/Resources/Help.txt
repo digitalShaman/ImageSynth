@@ -1,0 +1,32 @@
+Bild Synthese
+
+Mit diesem Programm können mehrere "Generatoren" und "Funktionen" zusammengeschlossen werden und das Ergebnis wird als Bild angezeigt.
+Ein "Generator" ermittelt für jede Kombination aus x und y (Double von 0 bis 1) der Eingangskoordinaten einen Double Ausgabewert.
+Generatoren können weitere Parameter haben welche die Ergebnisberechnung beeinflussen. An diese Parameter kann die Ausgabe anderer Generatoren angeschlossen werden.
+"Funktionen" generieren keinen Output auf Basis von x/y, sondern auf Basis der Eingabeparameter, so gibt die Funktion Multiply das Produkt beider Eingänge zurück.
+
+Solche Funktionen zu Bildsynthese werden für prozedurale Texturen verwendet, wo Oberflächengrafiken für 3d Modelle nicht als Bitmap gespeichert und daher mitgeliefert werden müssen, sondern lediglich die Funktionskette und Parameter geliefert werden und die Textur erst zur Laufzeit berechnet wird.
+
+
+Bedienung des Programms
+
+Die Funktionen und Generatoren können per Drag&Drop verschoben werden, die Linien stellen den Signalfluss dar. Um neue Generatoren/Funktionen hinzuzufügen bitte die Schaltfläche "Funktion hinzufügen" benutzen.
+Ein Output Kontakt (am rechten Rand der Module) kann an mehrere Input Kontakte anderer Module angeschlossen werden. Um Eine Verbindung herzustellen, auf einen Output Kontakt mit dem linken Mausknopf klicken, gedrückt halten und die Maus über einen Input Kontakt (am linken Rand der Module) ziehen, dann loslassen. Das Bild wird sofort neu berechnet.
+Werden an einen Input Kontakt mehrere Signale angeschlossen, so werden alle Signale summiert.
+
+
+Das Modul Image stellt den Endpunkt des Signalflusses dar. Hier stehen der Rot, Grün und Blau Kanal als Eingangsparameter zur Verfügung.
+
+Um ein Modul zu löschen, das rote X rechts oben klicken, um Informationen zur Funktion zu erhalten auf das i klicken. S und M stehen für Solo und Mute. Bei Solo wird das Ausgabesignal des "ge-solo-ten" Moduls unter Berücksichtigung aller Eingabesignale berechnet und ggf. normalisiert angezeigt. Bei Mute geht das Ausgangs Signal des Moduls nicht in das Ergebnisbild ein.
+
+
+Programmierung
+
+Weitere Generatoren/Funktionen können dem Programm leicht hinzugefügt werden. Dazu einfach die bestehenden Sourcecodes ansehen und eine neue Klasse die von FunctionBase erbt hinzufügen.
+Um die neue Funktion auch auswählbar zu machen, das Array ltAvailable im frmChooseFunction erweitern. 
+
+
+
+Über Feedback freue ich mich im AVB Forum. Wenn jemand besonders interessante Muster generiert, dann gerne her mit den Funktionen und Parametern.
+
+Daniel Aue 07.2018, Version 1.0.0.0

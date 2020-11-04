@@ -1,0 +1,21 @@
+<Main>
+  <ConfigInstance LocationX="546" LocationY="92">
+    <FunctionInstance Guid="eb95ab2c-9481-4c33-a577-7e8952e11d41" IsSolo="0" IsMute="0" CodeName="ImageOutput" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="24" LocationY="151">
+    <FunctionInstance Guid="8f07ba6c-b75a-4254-bb8b-ae45dc6578fa" IsSolo="0" IsMute="0" CodeName="Sinus">
+      <Parameter Name="Intensity" Value="0.1" />
+      <Output OutputToConnector="Location X" OutputToItem="ec98acfc-ab98-4b99-a0d2-3a676c018860" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="240" LocationY="33">
+    <FunctionInstance Guid="ec98acfc-ab98-4b99-a0d2-3a676c018860" IsSolo="0" IsMute="0" CodeName="Scratches">
+      <Parameter Name="Count" Value="400" />
+      <Parameter Name="Width" Value="0.005" />
+      <Parameter Name="Location Y" Value="0.1" />
+      <Output OutputToConnector="Red" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Green" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Blue" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+    </FunctionInstance>
+  </ConfigInstance>
+</Main>

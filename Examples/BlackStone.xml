@@ -1,0 +1,95 @@
+<Main>
+  <ConfigInstance LocationX="1034" LocationY="289">
+    <FunctionInstance Guid="eb95ab2c-9481-4c33-a577-7e8952e11d41" IsSolo="0" IsMute="0" CodeName="ImageOutput" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="392" LocationY="231">
+    <FunctionInstance Guid="75948194-cb86-4eae-9ae2-8d07f97eedf2" IsSolo="0" IsMute="0" CodeName="Voronoi">
+      <Parameter Name="Scale X" Value="3" />
+      <Parameter Name="Location X" Value="1.5" />
+      <Parameter Name="Location Y" Value="0.5" />
+      <Output OutputToConnector="Input" OutputToItem="3c0d9eab-f715-451b-9d5d-da8ca85a001f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="40" LocationY="353">
+    <FunctionInstance Guid="d18b87e4-960e-45f7-992d-aa08b2bf5677" IsSolo="0" IsMute="0" CodeName="Sinus">
+      <Parameter Name="Scale X" Value="2" />
+      <Parameter Name="Location Y" Value="0.5" />
+      <Output OutputToConnector="Intensity" OutputToItem="75948194-cb86-4eae-9ae2-8d07f97eedf2" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="395" LocationY="410">
+    <FunctionInstance Guid="4b6a5bcd-635d-4850-a7f9-f99e7615a3fb" IsSolo="0" IsMute="0" CodeName="Scratches">
+      <Parameter Name="Count" Value="5" />
+      <Output OutputToConnector="Input" OutputToItem="3c0d9eab-f715-451b-9d5d-da8ca85a001f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="48" LocationY="644">
+    <FunctionInstance Guid="2b13aa0c-bfef-4e81-9d7c-44223738902f" IsSolo="0" IsMute="0" CodeName="Sinus">
+      <Parameter Name="Intensity" Value="0.0986649308623299" />
+      <Parameter Name="Location X" Value="0.5" />
+      <Parameter Name="Location Y" Value="0.5" />
+      <Output OutputToConnector="Location X" OutputToItem="4b6a5bcd-635d-4850-a7f9-f99e7615a3fb" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="43" LocationY="479">
+    <FunctionInstance Guid="356bbeb5-9e1f-415b-befe-1d5746a4e1d4" IsSolo="0" IsMute="0" CodeName="Voronoi">
+      <Parameter Name="Intensity" Value="2.5" />
+      <Parameter Name="Type" Value="4" />
+      <Parameter Name="Location X" Value="0.5" />
+      <Parameter Name="Location Y" Value="0.5" />
+      <Output OutputToConnector="Intensity" OutputToItem="4b6a5bcd-635d-4850-a7f9-f99e7615a3fb" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="296" LocationY="46">
+    <FunctionInstance Guid="d6411595-1679-48b6-aeef-d1ec3468272f" IsSolo="0" IsMute="0" CodeName="Voronoi">
+      <Parameter Name="Add" Value="0.4" />
+      <Parameter Name="Seed" Value="5" />
+      <Parameter Name="Type" Value="5" />
+      <Parameter Name="Scale X" Value="3" />
+      <Parameter Name="Location Y" Value="0.5" />
+      <Output OutputToConnector="Signal" OutputToItem="d82d02b3-99fe-4b03-94ae-d15d4208398f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="37" LocationY="123">
+    <FunctionInstance Guid="c8cb5872-fb85-4c95-977e-100adb6cb5f9" IsSolo="0" IsMute="0" CodeName="SimplexNoise">
+      <Parameter Name="Add" Value="4.35" />
+      <Parameter Name="Intensity" Value="0.15" />
+      <Output OutputToConnector="Location X" OutputToItem="d6411595-1679-48b6-aeef-d1ec3468272f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="38" LocationY="233">
+    <FunctionInstance Guid="c6cf6615-e5d2-4ae2-9ed3-00d2098486e0" IsSolo="0" IsMute="0" CodeName="SimplexNoise">
+      <Parameter Name="Add" Value="-1" />
+      <Parameter Name="Intensity" Value="0.03" />
+      <Parameter Name="Scale X" Value="50" />
+      <Parameter Name="Scale Y" Value="50" />
+      <Output OutputToConnector="Location X" OutputToItem="d6411595-1679-48b6-aeef-d1ec3468272f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="776" LocationY="303">
+    <FunctionInstance Guid="3c0d9eab-f715-451b-9d5d-da8ca85a001f" IsSolo="0" IsMute="0" CodeName="Add">
+      <Parameter Name="Value" Value="0.08" />
+      <Output OutputToConnector="Red" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Green" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Blue" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="539" LocationY="49">
+    <FunctionInstance Guid="d82d02b3-99fe-4b03-94ae-d15d4208398f" IsSolo="0" IsMute="0" CodeName="Compressor">
+      <Parameter Name="Level 2" Value="0.3" />
+      <Parameter Name="Factor 2" Value="1.4" />
+      <Parameter Name="Level 3" Value="0.4" />
+      <Parameter Name="Factor 3" Value="0" />
+      <Output OutputToConnector="Input" OutputToItem="3c0d9eab-f715-451b-9d5d-da8ca85a001f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="37" LocationY="16">
+    <FunctionInstance Guid="47c0a91f-15fc-499c-84a4-8abf10391175" IsSolo="0" IsMute="0" CodeName="Sinus">
+      <Parameter Name="Scale X" Value="2" />
+      <Parameter Name="Scale Y" Value="0.630247042161" />
+      <Parameter Name="Location X" Value="0.147088548711758" />
+      <Parameter Name="Location Y" Value="0.442" />
+      <Output OutputToConnector="Intensity" OutputToItem="d6411595-1679-48b6-aeef-d1ec3468272f" />
+    </FunctionInstance>
+  </ConfigInstance>
+</Main>

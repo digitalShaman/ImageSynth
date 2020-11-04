@@ -1,0 +1,42 @@
+<Main>
+  <ConfigInstance LocationX="797" LocationY="321">
+    <FunctionInstance Guid="eb95ab2c-9481-4c33-a577-7e8952e11d41" IsSolo="0" IsMute="0" CodeName="ImageOutput" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="10" LocationY="10">
+    <FunctionInstance Guid="8f07ba6c-b75a-4254-bb8b-ae45dc6578fa" IsSolo="0" IsMute="0" CodeName="Sinus" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="10" LocationY="119">
+    <FunctionInstance Guid="172d5182-611d-4a67-9149-11a76c7373c1" IsSolo="0" IsMute="0" CodeName="Voronoi">
+      <Parameter Name="Location X" Value="0" />
+      <Parameter Name="Location Y" Value="0" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="9" LocationY="264">
+    <FunctionInstance Guid="02b5d2ce-50cc-4fd5-b353-3c1daf22245f" IsSolo="0" IsMute="0" CodeName="SimplexNoise" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="10" LocationY="371">
+    <FunctionInstance Guid="224c164d-65a4-4a35-878f-8b24217944d0" IsSolo="0" IsMute="0" CodeName="RandomNoise" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="12" LocationY="428">
+    <FunctionInstance Guid="ec98acfc-ab98-4b99-a0d2-3a676c018860" IsSolo="0" IsMute="0" CodeName="Scratches" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="264" LocationY="67">
+    <FunctionInstance Guid="8e79dbe4-79dd-407c-95a8-62dc3cc9adc5" IsSolo="0" IsMute="0" CodeName="Concentric" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="264" LocationY="223">
+    <FunctionInstance Guid="df632470-9839-4542-84da-fbbe2dd2e90e" IsSolo="0" IsMute="0" CodeName="Polygon">
+      <Parameter Name="Type" Value="0" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="263" LocationY="522">
+    <FunctionInstance Guid="50d6846c-5e13-4e07-8cde-28a373fe0c99" IsSolo="0" IsMute="0" CodeName="Julia">
+      <Output OutputToConnector="Green" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Red" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="263" LocationY="403">
+    <FunctionInstance Guid="7818373b-64d7-4ea8-a76a-97c59728f31f" IsSolo="0" IsMute="0" CodeName="Mandelbrot">
+      <Output OutputToConnector="Blue" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+    </FunctionInstance>
+  </ConfigInstance>
+</Main>

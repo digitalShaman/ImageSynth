@@ -1,0 +1,220 @@
+<Main>
+  <ConfigInstance LocationX="1986" LocationY="326">
+    <FunctionInstance Guid="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" IsSolo="0" IsMute="0" CodeName="ImageOutput" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="644" LocationY="272">
+    <FunctionInstance Guid="deb575e5-6e8d-494d-9c52-76e28cb4d12e" IsSolo="0" IsMute="0" CodeName="Mandelbrot">
+      <Parameter Name="Location X" Value="-0.74955" />
+      <Parameter Name="Location Y" Value="-0.0466398563862081" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1491" LocationY="117">
+    <FunctionInstance Guid="cfa3593b-e448-460f-af1b-df10e4ad288f" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Output OutputToConnector="Green" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1489" LocationY="217">
+    <FunctionInstance Guid="7006576c-70bd-49bb-95b1-96cb65d2cf29" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Output OutputToConnector="Factor 2" OutputToItem="18450c1f-c08b-4fe7-b0bd-73146fafc614" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1492" LocationY="314">
+    <FunctionInstance Guid="f85a8901-6a60-4fae-8c00-71f2489ca5a2" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Output OutputToConnector="Factor 2" OutputToItem="12f0c183-09aa-46c1-b9b4-9b0321da321d" />
+      <Output OutputToConnector="Blue" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1492" LocationY="19">
+    <FunctionInstance Guid="b8d7d793-e37d-40f8-a683-51661eb70f9a" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Output OutputToConnector="Red" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1693" LocationY="305">
+    <FunctionInstance Guid="12f0c183-09aa-46c1-b9b4-9b0321da321d" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="-0.5" />
+      <Output OutputToConnector="Green" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1494" LocationY="418">
+    <FunctionInstance Guid="32eb9213-1710-445c-a171-d32eaa7a8ebf" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Output OutputToConnector="Factor 2" OutputToItem="4ffce9de-2b04-4057-b4fc-ec97da8a1f5d" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="640" LocationY="389">
+    <FunctionInstance Guid="81590bd0-fb51-4301-9954-77f233ed01fe" IsSolo="0" IsMute="0" CodeName="Mandelbrot">
+      <Parameter Name="Location Y" Value="-0.1845" />
+      <Output OutputToConnector="Input" OutputToItem="961b928e-4ad5-4804-83a7-92c0d91a5611" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1494" LocationY="515">
+    <FunctionInstance Guid="3aa9fc16-712f-4f5f-8283-985830e917b2" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Parameter Name="Intensity" Value="0.8" />
+      <Output OutputToConnector="Red" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1495" LocationY="614">
+    <FunctionInstance Guid="818727db-12f9-4a59-a4c0-0d1dd5334713" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Output OutputToConnector="Factor 2" OutputToItem="5df1e05d-2c03-4331-a143-697d39645ae8" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1065" LocationY="22">
+    <FunctionInstance Guid="fb203eec-b50b-493a-9247-5772334c1178" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Parameter Name="Maximum" Value="0.0205891132094649" />
+      <Output OutputToConnector="Factor 2" OutputToItem="22a79dca-3f0b-4871-b137-1ef786462b04" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1268" LocationY="36">
+    <FunctionInstance Guid="22a79dca-3f0b-4871-b137-1ef786462b04" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="45.0353302392871" />
+      <Output OutputToConnector="Signal" OutputToItem="b8d7d793-e37d-40f8-a683-51661eb70f9a" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="851" LocationY="350">
+    <FunctionInstance Guid="961b928e-4ad5-4804-83a7-92c0d91a5611" IsSolo="0" IsMute="0" CodeName="Add">
+      <Output OutputToConnector="Signal" OutputToItem="fb203eec-b50b-493a-9247-5772334c1178" />
+      <Output OutputToConnector="Signal" OutputToItem="4a26702b-70aa-4c13-9a89-eb15e4ac134b" />
+      <Output OutputToConnector="Signal" OutputToItem="f49d3bf5-bcd9-4dd0-8641-d9361722b9e7" />
+      <Output OutputToConnector="Signal" OutputToItem="3e9f2f1d-1e2d-4f18-bd75-50c2c13f135e" />
+      <Output OutputToConnector="Signal" OutputToItem="23a247c9-49c6-48ac-9a37-95984a570237" />
+      <Output OutputToConnector="Signal" OutputToItem="05f78e94-b39a-4dfb-838f-db3453138597" />
+      <Output OutputToConnector="Signal" OutputToItem="521617a9-938e-45d4-9d9c-c4c1dc99bb46" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1066" LocationY="122">
+    <FunctionInstance Guid="4a26702b-70aa-4c13-9a89-eb15e4ac134b" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Parameter Name="Add" Value="-0.021" />
+      <Parameter Name="Minimum" Value="0.021" />
+      <Parameter Name="Maximum" Value="0.0496013913153704" />
+      <Output OutputToConnector="Factor 2" OutputToItem="23933dd6-d530-4e6a-878d-edd1674cae6f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1276" LocationY="142">
+    <FunctionInstance Guid="23933dd6-d530-4e6a-878d-edd1674cae6f" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="34.1774850224917" />
+      <Output OutputToConnector="Signal" OutputToItem="cfa3593b-e448-460f-af1b-df10e4ad288f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1067" LocationY="221">
+    <FunctionInstance Guid="f49d3bf5-bcd9-4dd0-8641-d9361722b9e7" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Parameter Name="Add" Value="-0.05" />
+      <Parameter Name="Minimum" Value="0.05" />
+      <Parameter Name="Maximum" Value="0.0966590794400538" />
+      <Output OutputToConnector="Factor 2" OutputToItem="9ba1d959-8e1e-4778-a18d-5d1adcc95377" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1280" LocationY="239">
+    <FunctionInstance Guid="9ba1d959-8e1e-4778-a18d-5d1adcc95377" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="21.4" />
+      <Output OutputToConnector="Signal" OutputToItem="7006576c-70bd-49bb-95b1-96cb65d2cf29" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1068" LocationY="321">
+    <FunctionInstance Guid="3e9f2f1d-1e2d-4f18-bd75-50c2c13f135e" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Parameter Name="Add" Value="-0.097" />
+      <Parameter Name="Minimum" Value="0.097" />
+      <Parameter Name="Maximum" Value="0.152470071873751" />
+      <Output OutputToConnector="Factor 2" OutputToItem="6b9dc45d-6530-4cd4-8691-b5ed7fdff5a8" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1281" LocationY="332">
+    <FunctionInstance Guid="6b9dc45d-6530-4cd4-8691-b5ed7fdff5a8" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="17.4476096635811" />
+      <Output OutputToConnector="Signal" OutputToItem="f85a8901-6a60-4fae-8c00-71f2489ca5a2" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1065" LocationY="420">
+    <FunctionInstance Guid="23a247c9-49c6-48ac-9a37-95984a570237" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Parameter Name="Add" Value="-0.152" />
+      <Parameter Name="Minimum" Value="0.152" />
+      <Parameter Name="Maximum" Value="0.376" />
+      <Output OutputToConnector="Factor 2" OutputToItem="b4e5c391-d6b7-46af-93af-4026a1f0c316" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1281" LocationY="443">
+    <FunctionInstance Guid="b4e5c391-d6b7-46af-93af-4026a1f0c316" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="8.34513761450088" />
+      <Output OutputToConnector="Signal" OutputToItem="32eb9213-1710-445c-a171-d32eaa7a8ebf" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1069" LocationY="518">
+    <FunctionInstance Guid="05f78e94-b39a-4dfb-838f-db3453138597" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Parameter Name="Add" Value="-0.376" />
+      <Parameter Name="Minimum" Value="0.375511101070347" />
+      <Parameter Name="Maximum" Value="0.763" />
+      <Output OutputToConnector="Factor 2" OutputToItem="f746d0cc-fe17-4d89-b367-58bfff292e02" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1279" LocationY="539">
+    <FunctionInstance Guid="f746d0cc-fe17-4d89-b367-58bfff292e02" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="2.56667863633534" />
+      <Output OutputToConnector="Signal" OutputToItem="3aa9fc16-712f-4f5f-8283-985830e917b2" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1071" LocationY="618">
+    <FunctionInstance Guid="521617a9-938e-45d4-9d9c-c4c1dc99bb46" IsSolo="0" IsMute="0" CodeName="Clamp">
+      <Parameter Name="Add" Value="-0.763" />
+      <Parameter Name="Minimum" Value="0.76338174" />
+      <Output OutputToConnector="Factor 2" OutputToItem="880a0096-51c1-4094-95c7-ade0fa7b1963" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1282" LocationY="643">
+    <FunctionInstance Guid="880a0096-51c1-4094-95c7-ade0fa7b1963" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="4.1354756877215" />
+      <Output OutputToConnector="Signal" OutputToItem="818727db-12f9-4a59-a4c0-0d1dd5334713" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1707" LocationY="631">
+    <FunctionInstance Guid="5df1e05d-2c03-4331-a143-697d39645ae8" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="-1" />
+      <Output OutputToConnector="Blue" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+      <Output OutputToConnector="Red" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1685" LocationY="233">
+    <FunctionInstance Guid="18450c1f-c08b-4fe7-b0bd-73146fafc614" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="-1" />
+      <Output OutputToConnector="Red" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="1682" LocationY="383">
+    <FunctionInstance Guid="4ffce9de-2b04-4057-b4fc-ec97da8a1f5d" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="-0.5" />
+      <Output OutputToConnector="Green" OutputToItem="8ef3b3f8-d0b1-4b78-88ea-f2d8fbfb36ef" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="133" LocationY="305">
+    <FunctionInstance Guid="d7058af4-3993-43c1-9d9e-e05e9aefa54c" IsSolo="0" IsMute="0" CodeName="LinearPlayer">
+      <Parameter Name="Start" Value="1" />
+      <Parameter Name="End" Value="0" />
+      <Parameter Name="Frames" Value="600" />
+      <Output OutputToConnector="Factor 1" OutputToItem="455aecc4-ce82-42bf-b98c-33933bb346da" />
+      <Output OutputToConnector="Factor 2" OutputToItem="455aecc4-ce82-42bf-b98c-33933bb346da" />
+      <Output OutputToConnector="Factor 3" OutputToItem="455aecc4-ce82-42bf-b98c-33933bb346da" />
+      <Output OutputToConnector="Factor 4" OutputToItem="455aecc4-ce82-42bf-b98c-33933bb346da" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="371" LocationY="332">
+    <FunctionInstance Guid="455aecc4-ce82-42bf-b98c-33933bb346da" IsSolo="0" IsMute="0" CodeName="Multiply">
+      <Output OutputToConnector="Scale X" OutputToItem="81590bd0-fb51-4301-9954-77f233ed01fe" />
+      <Output OutputToConnector="Scale Y" OutputToItem="81590bd0-fb51-4301-9954-77f233ed01fe" />
+      <Output OutputToConnector="Scale X" OutputToItem="deb575e5-6e8d-494d-9c52-76e28cb4d12e" />
+      <Output OutputToConnector="Scale Y" OutputToItem="deb575e5-6e8d-494d-9c52-76e28cb4d12e" />
+      <Output OutputToConnector="Factor 2" OutputToItem="ff418260-9ce4-48e5-a8f7-a11b9e1af84f" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="380" LocationY="665">
+    <FunctionInstance Guid="dd14ceb2-9c84-4913-8e8b-35b23d75a9e1" IsSolo="0" IsMute="0" CodeName="Add">
+      <Parameter Name="Value" Value="-0.812" />
+      <Output OutputToConnector="Location X" OutputToItem="81590bd0-fb51-4301-9954-77f233ed01fe" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="390" LocationY="521">
+    <FunctionInstance Guid="3706da92-5a76-4933-9340-fa7a5a9d023f" IsSolo="0" IsMute="0" CodeName="Sinus" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="377" LocationY="419">
+    <FunctionInstance Guid="ff418260-9ce4-48e5-a8f7-a11b9e1af84f" IsSolo="1" IsMute="0" CodeName="Multiply">
+      <Parameter Name="Factor 1" Value="0.5" />
+      <Output OutputToConnector="Intensity" OutputToItem="3706da92-5a76-4933-9340-fa7a5a9d023f" />
+    </FunctionInstance>
+  </ConfigInstance>
+</Main>

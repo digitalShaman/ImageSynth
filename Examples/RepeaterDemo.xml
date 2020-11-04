@@ -1,0 +1,37 @@
+<Main>
+  <ConfigInstance LocationX="551" LocationY="81">
+    <FunctionInstance Guid="e3cc0af5-f4b0-4b19-b1f4-9d2ad8bb4683" IsSolo="0" IsMute="0" CodeName="ImageOutput" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="341" LocationY="29">
+    <FunctionInstance Guid="47be7762-a12e-4ca9-b678-0f6f7997d0ac" IsSolo="0" IsMute="0" CodeName="Polygon">
+      <Parameter Name="Type" Value="0" />
+      <Parameter Name="Minimum" Value="0" />
+      <Output OutputToConnector="Red" OutputToItem="e3cc0af5-f4b0-4b19-b1f4-9d2ad8bb4683" />
+      <Output OutputToConnector="Green" OutputToItem="e3cc0af5-f4b0-4b19-b1f4-9d2ad8bb4683" />
+      <Output OutputToConnector="Blue" OutputToItem="e3cc0af5-f4b0-4b19-b1f4-9d2ad8bb4683" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="14" LocationY="47">
+    <FunctionInstance Guid="9397e146-bc07-4ea0-a701-233952bdbbbb" IsSolo="0" IsMute="0" CodeName="Repeater">
+      <Output OutputToConnector="Intensity" OutputToItem="47be7762-a12e-4ca9-b678-0f6f7997d0ac" OutputFromConnector="0" />
+      <Output OutputToConnector="Corners" OutputToItem="47be7762-a12e-4ca9-b678-0f6f7997d0ac" OutputFromConnector="1" />
+      <Output OutputToConnector="Scale X" OutputToItem="47be7762-a12e-4ca9-b678-0f6f7997d0ac" OutputFromConnector="2" />
+      <Output OutputToConnector="Scale Y" OutputToItem="47be7762-a12e-4ca9-b678-0f6f7997d0ac" OutputFromConnector="3" />
+      <Output OutputToConnector="Location X" OutputToItem="47be7762-a12e-4ca9-b678-0f6f7997d0ac" OutputFromConnector="4" />
+      <Output OutputToConnector="Location Y" OutputToItem="47be7762-a12e-4ca9-b678-0f6f7997d0ac" OutputFromConnector="5" />
+      <Output OutputToConnector="Rotation" OutputToItem="47be7762-a12e-4ca9-b678-0f6f7997d0ac" OutputFromConnector="6" />
+      <DataSequenceTable>1	6	10	10	0	0					
+0.5				0.1	-0.1	-0.3				
+0.3				0.15	-0.25	-0.5				
+0.5				-0.1	-0.1	-0.3				
+0.3				-0.25	-0.15	-0.5				
+0.5				-0.1	0.1					
+0.3				-0.15	0.25					
+0.5				0.1	0.1					
+0.3				0.25	0.15					
+0.3		2	2	0	0					
+0.3		4	4			-0.5				
+</DataSequenceTable>
+    </FunctionInstance>
+  </ConfigInstance>
+</Main>

@@ -1,0 +1,21 @@
+<Main>
+  <ConfigInstance LocationX="497" LocationY="57">
+    <FunctionInstance Guid="eb95ab2c-9481-4c33-a577-7e8952e11d41" IsSolo="0" IsMute="0" CodeName="ImageOutput" />
+  </ConfigInstance>
+  <ConfigInstance LocationX="40" LocationY="36">
+    <FunctionInstance Guid="766cbd8f-4e64-4fdd-8187-df589ff1aa7c" IsSolo="0" IsMute="0" CodeName="Sinus">
+      <Parameter Name="Scale X" Value="4" />
+      <Parameter Name="Scale Y" Value="4" />
+      <Output OutputToConnector="Filter Signal" OutputToItem="c47d4cc3-2032-4a3a-b9fd-87df22508aba" />
+    </FunctionInstance>
+  </ConfigInstance>
+  <ConfigInstance LocationX="267" LocationY="48">
+    <FunctionInstance Guid="c47d4cc3-2032-4a3a-b9fd-87df22508aba" IsSolo="0" IsMute="0" CodeName="Filter">
+      <Parameter Name="Minimum" Value="0.5" />
+      <Parameter Name="Default High" Value="0" />
+      <Output OutputToConnector="Blue" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Green" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+      <Output OutputToConnector="Red" OutputToItem="eb95ab2c-9481-4c33-a577-7e8952e11d41" />
+    </FunctionInstance>
+  </ConfigInstance>
+</Main>
